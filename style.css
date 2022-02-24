@@ -1,14 +1,36 @@
-#navbar {
+.navbar{
     width: 100%;
 	height: 50px;
     top : 12px;
 	margin: 0;
-    font-size: 20px;
-	color: rgb(137, 199, 240);
     background: white;
-    position : fixed;
+    position : fixed; 
+    /* position not fixed */
+}
+
+.nav{
+    font-size: 20px;
+	color: rgb(113, 181, 226);
     text-decoration: none;
 }
+
+
+/* does not work */
+.header > .nav :hover {
+    text-decoration: underline;
+}
+
+.header > .nav{
+    width : 7%;
+    text-align : center;
+}
+
+
+#home {
+    width : 15%
+}
+
+/* does not work */
 
 #main {
     width : 100%;
@@ -16,14 +38,24 @@
     height : 600px;
     background-image:url(image/fly.JPG);
     background-size: 1450px 600px;
+    color : white;
+    font-size : 50px
 }
 
-#join{
-    top:40%;
-
-}
 
 .title{
-    font-size:large
+    width: 50%;
+    margin : 25%;
 }
+
+.join{
+    top:40%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
 
