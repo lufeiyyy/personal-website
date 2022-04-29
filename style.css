@@ -72,6 +72,7 @@
   }
 
 .highlight{
+    color: rgb(137, 170, 219);
     width:40%;
     padding: 80px;
     text-align : center;
@@ -80,14 +81,45 @@
 }
 
 .place{
+    color: rgb(137, 170, 219);
     width: calc(50% - 5px);
     display: inline-block;
-    
-}
-
-.place > .name{
     text-align : center;
 }
+
+/* Container needed to position the button. Adjust the width as needed */
+.image {
+    position: relative;
+    /* width: 50%; */
+  }
+  
+  /* Make the image responsive */
+  .image img {
+    width: 80%;
+    height: auto;
+
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .image .btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: rgb(137, 170, 219);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .image .btn:hover {
+    background-color: white;
+  }
+
 
 /* contact section */
 .contacts > .contact {
@@ -103,6 +135,7 @@
 #contact-me{
     width: 30%;
     text-align : center;
+    padding: 0px;
 }
 
 #message{
